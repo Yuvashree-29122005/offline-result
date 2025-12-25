@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+
+<h2>Result for Register Number: {{ regno }}</h2>
+
+{% if data %}
+<table border="1" cellpadding="10">
+    <tr>
+        <th>Subject Code</th>
+        <th>Subject Name</th>
+        <th>Grade</th>
+        <th>Result</th>
+    </tr>
+    {% for row in data %}
+    <tr>
+        <td>{{ row.SubjectCode }}</td>
+        <td>{{ row.SubjectName }}</td>
+        <td>{{ row.Grade }}</td>
+        <td>{{ row.Result }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<p>No result found.</p>
+{% endif %}
+
+<br>
+<a href="/">Go Back</a>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+RegisterNumber,SubjectCode,SubjectName,Grade,Result
+12345678,CS8451,Design and Analysis of Algorithms,A,PASS
+12345678,CS8491,Computer Networks,B+,PASS
+12345678,CS8401,Operating Systems,A,PASS
+87654321,CS8451,DAA,B,PASS
